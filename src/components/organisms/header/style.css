@@ -1,0 +1,10 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.logo-img {
+  margin-right: 125px;
+}

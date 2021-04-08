@@ -1,0 +1,37 @@
+import React from "react";
+import Button from "../../atoms/buttons/Button";
+import Image from "../../atoms/image/Image";
+import Text from "../../atoms/text/Text";
+import "./style.css";
+
+function CorouselInfo(props) {
+  const { textContentHeader, textContentSubHeader, tag1, tag2 } = props;
+  return (
+    <div className="corouselInfo-container">
+      <div className="infoHeader">
+        {" "}
+        <Text content={textContentHeader} type="text-header"></Text>
+      </div>
+      <div className="infoSubHeader">
+        {" "}
+        <Text
+          content={textContentSubHeader}
+          type="text-subheader"
+          className="subheader"
+        ></Text>
+      </div>
+      <div className="corousel-tags">
+        <Text content={tag1} type="text-tag"></Text>
+        <Text content={tag2} type="text-tag"></Text>
+      </div>
+
+      <div className="play-button-container">
+        <Image source="play-button.png" width="92" height="67"></Image>
+
+        <Text content="Play" type="text-play"></Text>
+      </div>
+    </div>
+  );
+}
+
+export default CorouselInfo;
