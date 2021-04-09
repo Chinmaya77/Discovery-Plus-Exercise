@@ -4,8 +4,8 @@ import Image from "../../atoms/image/Image";
 import Search from "../../molecules/search/Search";
 import NavLinks from "../../molecules/navLinks/NavLinks";
 
-function Header() {
-  const linkData = ["Home", "Explore", "Shorts", "MindBlown", "Premium"];
+function Header(props) {
+  const { linkData } = props;
 
   return (
     <div className="header-container">

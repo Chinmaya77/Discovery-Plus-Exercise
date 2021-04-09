@@ -3,8 +3,8 @@ import Text from "../text/Text";
 import "./style.css";
 
 function Link(props) {
-  const { onClick, location, linkName, classType, status } = props;
-  console.log(status);
+  const { onClick, location, linkName, status } = props;
+
   return (
     <div>
       <a href={location} onClick={onClick} className="link">

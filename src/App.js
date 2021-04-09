@@ -1,18 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Button from "./components/atoms/buttons/Button";
-import Image from "./components/atoms/image/Image";
-import Input from "./components/atoms/input/Input";
-import Link from "./components/atoms/navLink/Link";
-import SearchBar from "./components/molecules/searchBar/SearchBar";
-import NavLinks from "./components/molecules/navLinks/NavLinks";
-import Search from "./components/molecules/search/Search";
-import CorouselInfo from "./components/molecules/corouselInfo/CorouselInfo";
+
 import Header from "./components/organisms/header/Header";
 import Corousel from "./components/organisms/corousel/Corousel";
 
+import Category from "./components/organisms/category/Category";
+
 function App() {
-  const linkData = ["Home", "Explore", "Shorts", "MindBlown", "Premium"];
   const carouselData = [
     {
       textContentHeader: "Mission Frontline",
@@ -47,30 +40,42 @@ function App() {
       image: "two-nations.jpeg",
     },
   ];
+
+  const categoryData = [
+    {
+      image: "adventures.jpg",
+      text: "Adventures",
+    },
+    {
+      image: "animals.jpg",
+      text: "Animals",
+    },
+    {
+      image: "nature.jpg",
+      text: "Nature",
+    },
+    {
+      image: "auto.jpg",
+      text: "Auto",
+    },
+    {
+      image: "food.jpg",
+      text: "Food",
+    },
+    {
+      image: "lifestyle.jpg",
+      text: "Lifestyle",
+    },
+  ];
+
+  const linkData = ["Home", "Explore", "Shorts", "MindBlown", "Premium"];
+
   return (
     <div className="App">
-      {/* <Button type="button" bgColor="primary" btnName="Sign In"></Button> */}
-      {/* <Image source="discovery-logo.png" height="50" width="150"></Image> */}
-      {/* <Input
-        placeHolder="Search for a Show, episodes, shorts etc."
-        classType="search"
-      ></Input> */}
-      {/* <Link
-        style={{ width: "50px", height: "50px" }}
-        classType="link"
-        linkName="Home"
-        location="/"
-      ></Link> */}
-      {/* <SearchBar></SearchBar> */}
-      {/* <NavLinks linkData={linkData}></NavLinks> */}
-      {/* <Search></Search> */}
-      {/* <CorouselInfo
-        tag1="Must Try"
-        textContentHeader="Mission Frontline"
-        textContentSubHeader="Superstar Rana Daggubati spends time with India's finest of the Border Security Force at an outpost in Jaisalmer, Rajasthan in this discovery+ original."
-      ></CorouselInfo> */}
-      <Header></Header>
+      <Header linkData={linkData}></Header>
       <Corousel corouselData={carouselData}></Corousel>
+
+      <Category categoryData={categoryData}></Category>
     </div>
   );
 }

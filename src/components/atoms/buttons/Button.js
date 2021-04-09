@@ -4,7 +4,7 @@ import "./style.css";
 import Text from "../text/Text";
 
 function Button(props) {
-  const { type, size, bgColor, btnName } = props;
+  const { type, bgColor, btnName } = props;
 
   return (
     <div>

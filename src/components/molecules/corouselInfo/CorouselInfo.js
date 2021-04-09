@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../atoms/buttons/Button";
+
 import Image from "../../atoms/image/Image";
 import Text from "../../atoms/text/Text";
 import "./style.css";
@@ -26,7 +26,12 @@ function CorouselInfo(props) {
       </div>
 
       <div className="play-button-container">
-        <Image source="play-button.png" width="92" height="67"></Image>
+        <Image
+          source="play-button.png"
+          width="92"
+          height="67"
+          imgBorder="img-play"
+        ></Image>
 
         <Text content="Play" type="text-play"></Text>
       </div>

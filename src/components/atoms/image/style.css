@@ -30,3 +30,23 @@
 .corousel-Img {
   border-radius: 10px;
 }
+
+.category-img {
+  border-radius: 10px;
+}
+
+.img-play {
+}
+
+@media screen and (max-width: 1300px) {
+  .img-play {
+    height: 57px;
+    width: 78px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .img-play {
+    height: 47px;
+    width: 68px;
+  }
+}

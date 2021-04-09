@@ -1,5 +1,12 @@
 .corouselInfo-container {
   text-align: left;
+  /* display: grid;
+  grid-template-rows: 20% 35% 15% 30%;
+  gap: 5px; */
+
+  /* display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 5px; */
 }
 .corousel-tags {
   padding-top: 20px;
