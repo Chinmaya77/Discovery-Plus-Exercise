@@ -6,7 +6,6 @@ function Input(props) {
   return (
     <div>
       <input
-        maxLength="100"
         type="text"
         placeholder={placeHolder}
         className={`input input-${classType}`}

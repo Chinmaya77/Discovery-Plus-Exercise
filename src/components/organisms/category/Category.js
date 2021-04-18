@@ -1,9 +1,9 @@
 import React from "react";
 import CategoryInfo from "../../molecules/categoryInfo/CategoryInfo";
 import "./style.css";
+import { categoryData } from "../../Data";
 
-function Category(props) {
-  const { categoryData } = props;
+function Category() {
   return (
     <div className="category-container">
       {categoryData.map((item, index) => {

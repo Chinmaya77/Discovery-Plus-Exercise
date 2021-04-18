@@ -3,9 +3,9 @@ import CorouselIndicator from "../../atoms/corouselIndicator/CorouselIndicator";
 import Image from "../../atoms/image/Image";
 import CorouselInfo from "../../molecules/corouselInfo/CorouselInfo";
 import "./style.css";
+import { corouselData } from "../../Data";
 
-function Corousel(props) {
-  const { corouselData } = props;
+function Corousel() {
   const [active, setActive] = useState(0);
 
   useEffect(() => {

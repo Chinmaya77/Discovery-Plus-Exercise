@@ -3,10 +3,9 @@ import "./style.css";
 import Image from "../../atoms/image/Image";
 import Search from "../../molecules/search/Search";
 import NavLinks from "../../molecules/navLinks/NavLinks";
+import { linkData } from "../../Data";
 
-function Header(props) {
-  const { linkData } = props;
-
+function Header() {
   return (
     <div className="header-container">
       <Image

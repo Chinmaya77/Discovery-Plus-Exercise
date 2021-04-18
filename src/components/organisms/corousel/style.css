@@ -44,3 +44,17 @@
     padding-left: 40px;
   }
 }
+@media screen and (max-width: 780px) {
+  .corousel-container {
+    padding-left: 10px;
+    padding-top: 0px;
+
+    /* grid-template-columns: 2; */
+    grid-gap: 20px;
+  }
+
+  .indicator {
+    padding-top: 0px;
+    padding-left: 60px;
+  }
+}

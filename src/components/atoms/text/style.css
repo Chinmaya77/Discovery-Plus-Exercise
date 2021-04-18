@@ -98,3 +98,24 @@
     font-size: 12px;
   }
 }
+@media screen and (max-width: 780px) {
+  .text-header {
+    font-size: 18px;
+  }
+
+  .text-play {
+    font-size: 18px;
+    color: white;
+  }
+  .text-tag {
+    height: 14px;
+    width: 14px;
+    font-size: 8px;
+    color: #9ba1a9;
+
+    padding: 2px 4px;
+    margin-right: 8px;
+
+    background: rgb(40, 46, 61);
+  }
+}
